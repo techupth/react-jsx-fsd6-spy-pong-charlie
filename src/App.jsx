@@ -33,19 +33,18 @@ function IntroSection() {
         techupth.com
       </a>
       {/* ให้แสดงวันเวลาด้วย Function `getCurrentDateTime` ที่กำหนดไว้ให้ */}
-      {getCurrentDateTime()}
     </div>
   );
 }
 
 function LoginForm() {
   return (
-    <div class="login-container">
-      <form class="login-form">
+    <div className="login-container">
+      <form className="login-form">
         <h2>Login</h2>
-        <label for="username">Username</label>
+        <label htmlFor="username">Username</label>
         <input type="text" id="username" name="username" />
-        <label for="password">Password</label>
+        <label htmlFor="password">Password</label>
         <input type="password" id="password" name="password" />
         <button type="submit">Login</button>
       </form>
