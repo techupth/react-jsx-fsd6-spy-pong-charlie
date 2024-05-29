@@ -19,6 +19,7 @@ function getCurrentDateTime() {
 }
 
 function IntroSection() {
+  let currentDataTime = getCurrentDateTime();
   return (
     <div className={articleStyles.container}>
       <h3 className={articleStyles.title}>TechUp Thailand</h3>
@@ -33,6 +34,9 @@ function IntroSection() {
         techupth.com
       </a>
       {/* ให้แสดงวันเวลาด้วย Function `getCurrentDateTime` ที่กำหนดไว้ให้ */}
+      <div className="bootcamp-start-time">
+        วันเวลาเริ่มหลักสูตร คือ {currentDataTime}{" "}
+      </div>
     </div>
   );
 }
